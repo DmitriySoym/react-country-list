@@ -1,8 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
+import { Countrylist } from "./components/Countrylist/Countrylist";
+import countries from "./country-data.json";
 
-function App() {
-  return <div className="App"></div>;
-}
-
-export default App;
+export const App = () => {
+  console.log(countries);
+  return (
+    <div className="App">
+      <h1 className="text-secondary">Country List</h1>
+      <Countrylist />
+    </div>
+  );
+};
