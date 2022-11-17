@@ -24,11 +24,11 @@ export interface ICountryFlag {
 export interface ICountryName {
   common: string;
   official: string;
-  nativeName: ICountryNativeName;
+  nativeName?: ICountryNativeName;
 }
 
 export interface ICountryNativeName {
-  spa: ICountrySpa;
+  spa?: ICountrySpa;
 }
 
 export interface ICountrySpa {
@@ -47,7 +47,4 @@ export enum Color {
   Dark = "dark",
 }
 
-export interface BadgeLabel {
-  area: string;
-  population: string;
-}
+export type BadgeLabel = "area" | "population";

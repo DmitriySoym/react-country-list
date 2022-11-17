@@ -1,10 +1,13 @@
-import React from "react";
-import { Countryitem } from "../Countryitem/Countryitem";
+import { ICountry } from "../../types";
+import { CountryItem } from "../Countryitem/Countryitem";
+interface IProps {
+  country: ICountry[];
+}
 
-export const Countrylist = () => {
+export const CountryList = ({ country }: IProps) => {
   return (
-    <div>
-      <Countryitem />
+    <div className="list-group">
+      <CountryItem country={country} />
     </div>
   );
 };
