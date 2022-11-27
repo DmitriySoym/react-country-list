@@ -6,7 +6,7 @@ export const App = () => {
   const countriesData = transformedCountries(countries);
 
   return (
-    <div className="overflow-hidden">
+    <div className="container">
       <h1 className="text-secondary text-center">Country List</h1>
       <CountryList country={countriesData} />
     </div>
